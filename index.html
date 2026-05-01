@@ -139,3 +139,20 @@
 
 
 </html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tab Protection</title>
+    <script>
+        // Trigger a confirmation dialog when the tab is about to close
+        window.onbeforeunload = function() {
+            return "Tab Block is active.";
+        };
+    </script>
+</head>
+<body>
+    <h1>This tab will prompt before closing.</h1>
+    <p>Note: Most modern browsers require you to click on the page at least once for this to work.</p>
+</body>
+</html>
